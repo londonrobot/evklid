@@ -143,11 +143,13 @@ li {
 .button:hover {
   background-color: var(--button-focus);
   cursor: pointer;
+  color: var(--light-font);
 }
 
 .button:active {
   background-color: var(--active-font);
   cursor: pointer;
+  color: var(--light-font);
 }
 
 /* header */
@@ -918,7 +920,7 @@ li {
 .footer__checkbox + label::before {
   content: "";
   position: absolute;
-  left: -20px;
+  left: 12px;
   top: 7px;
   width: 14px;
   height: 14px;
@@ -929,12 +931,16 @@ li {
   content: "";
   position: absolute;
   top: 10px;
-  left: -17px;
+  left: 14px;
   width: 10px;
   height: 10px;
   background: url("../img/check.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+}
+
+.footer__checkbox:focus + .footer__chekbox-desc {
+  outline: 2px solid var(--button);
 }
 
 .footer__text {
